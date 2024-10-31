@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio_website.css">
+    <title>Albert Einstein - Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm a Theoretical Physicist passionate about understanding the universe.</p>
+        <p class="intro">I developed the theory of relativity and contributed to the understanding of quantum mechanics, reshaping the scientific landscape of the 20th century.</p>
+        <a href="#about" class="button" onclick="openModal('aboutModal')">Learn More</a>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" alt="Albert Einstein" class="profile-img">
+        <p>My name is <strong>Albert Einstein</strong>, and I am a theoretical physicist known for developing the theory of relativity and contributing to the understanding of quantum mechanics. My journey in science has led me to receive several awards and accolades, including the Nobel Prize in Physics.</p>
+        <h3>Education</h3>
+        <p>Ph.D. in Physics - University of Zurich</p>
+        <h3>Professional Experience</h3>
+        <p>Professor at the Institute for Advanced Study - Developed groundbreaking theories in physics.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Theoretical Physics</li>
+            <li>Mathematics</li>
+            <li>Quantum Mechanics</li>
+            <li>Astrophysics</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Theory of Relativity</h3>
+            <p>Revolutionized the understanding of space, time, and gravity.</p>
+            <a href="#" class="button" onclick="openModal('relativityModal')">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Photoelectric Effect</h3>
+            <p>Explained the phenomenon of light and its interaction with matter, for which I received the Nobel Prize.</p>
+            <a href="#" class="button" onclick="openModal('photoelectricModal')">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Unified Field Theory</h3>
+            <p>Aimed to unify the forces of nature, contributing significantly to theoretical physics.</p>
+            <a href="#" class="button" onclick="openModal('unifiedModal')">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out!</p>
+        <p>Email: albert.einstein@example.com</p>
+        <p>LinkedIn: <a href="#">Albert Einstein LinkedIn Profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Albert Einstein. All rights reserved.</p>
+    </footer>
+
+    <!-- Modals -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('aboutModal')">&times;</span>
+            <h2>About Me</h2>
+            <p>Albert Einstein was a theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics). He is best known for his mass-energy equivalence formula E=mc², which has become a symbol of the scientific revolution.</p>
+            <p>Born on March 14, 1879, in Ulm, Germany, Einstein's work has had a profound impact on the way we understand time, space, and gravity. He was awarded the Nobel Prize in Physics in 1921 for his explanation of the photoelectric effect, a crucial step in the development of quantum theory.</p>
+        </div>
+    </div>
+
+    <div id="relativityModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('relativityModal')">&times;</span>
+            <h2>Theory of Relativity</h2>
+            <p>The theory of relativity, developed by Albert Einstein, is a fundamental theory in physics that revolutionized our understanding of space and time. It consists of two parts: special relativity and general relativity. Special relativity introduced the idea that the laws of physics are the same for all observers, regardless of their relative motion, and showed that light travels at a constant speed.</p>
+            <p>General relativity expanded on this, describing gravity as a curvature of spacetime caused by mass. This theory has been confirmed by numerous experiments and observations, including the bending of light around massive objects and the discovery of gravitational waves.</p>
+        </div>
+    </div>
+
+    <div id="photoelectricModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('photoelectricModal')">&times;</span>
+            <h2>Photoelectric Effect</h2>
+            <p>The photoelectric effect is the phenomenon where electrons are emitted from a material when it is exposed to light. Einstein's explanation of this effect provided crucial evidence for the quantum nature of light, leading to the development of quantum mechanics. His work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.</p>
+            <p>In essence, Einstein showed that light can be thought of as both a wave and a particle, which was a groundbreaking concept at the time.</p>
+        </div>
+    </div>
+
+    <div id="unifiedModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('unifiedModal')">&times;</span>
+            <h2>Unified Field Theory</h2>
+            <p>Einstein's unified field theory is an attempt to describe all fundamental forces of nature within a single theoretical framework. Although he was never able to fully formulate this theory, it represents a significant effort to unify the gravitational force with electromagnetism.</p>
+            <p>His pursuit of a unified field theory reflects his belief in the interconnectedness of all physical phenomena and his quest to find a simple, elegant explanation for the workings of the universe.</p>
+        </div>
+    </div>
+
+    <script src="portfolio_website.js"></script>
+</body>
+</html>
